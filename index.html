@@ -590,6 +590,10 @@ body {
 
 <!-- Hero -->
 <section class="hero">
+  <div style="position:absolute;top:20px;right:28px;z-index:10;display:flex;gap:4px;background:rgba(255,255,255,0.08);border-radius:100px;padding:3px;backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,0.12);">
+    <span style="padding:6px 16px;border-radius:100px;font-size:13px;font-weight:600;font-family:'DM Sans',sans-serif;background:rgba(255,255,255,0.15);color:#fff;cursor:default;">TR</span>
+    <a href="en.html" style="padding:6px 16px;border-radius:100px;font-size:13px;font-weight:600;font-family:'DM Sans',sans-serif;color:rgba(255,255,255,0.5);text-decoration:none;transition:all 0.3s;cursor:pointer;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">EN</a>
+  </div>
   <div class="hero-content">
     <div class="hero-badge">İstanbul Teknik Üniversitesi</div>
     <h1>Veri Bilimi ve İş Analitiği<br><span>Sertifika Programları</span></h1>
@@ -665,6 +669,10 @@ body {
     <div class="modules-grid" id="modules-ba"></div>
 
     <div style="margin-top:28px;background:#fff;border-radius:16px;border:1px solid #E2E8F0;box-shadow:0 1px 3px rgba(0,0,0,0.06);padding:32px 36px;">
+      <div style="margin-bottom:24px;padding-bottom:20px;border-bottom:2px solid #D4A843;">
+        <h3 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:#0B1D3A;margin-bottom:12px;">Program Koordinatörü</h3>
+        <div style="font-size:15px;color:#0B1D3A;font-weight:600;padding:6px 0;">Prof. Dr. Alp Üstündağ</div>
+      </div>
       <h3 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:#0B1D3A;margin-bottom:20px;">Eğitim Kadrosu</h3>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px 32px;">
         <div style="font-size:14px;color:#334155;padding:6px 0;">Prof. Dr. Mehmet Güray Güler</div>
@@ -712,6 +720,10 @@ body {
     <div class="modules-grid" id="modules-ds"></div>
 
     <div style="margin-top:28px;background:#fff;border-radius:16px;border:1px solid #E2E8F0;box-shadow:0 1px 3px rgba(0,0,0,0.06);padding:32px 36px;">
+      <div style="margin-bottom:24px;padding-bottom:20px;border-bottom:2px solid #D4A843;">
+        <h3 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:#0B1D3A;margin-bottom:12px;">Program Koordinatörü</h3>
+        <div style="font-size:15px;color:#0B1D3A;font-weight:600;padding:6px 0;">Prof. Dr. Alp Üstündağ</div>
+      </div>
       <h3 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:#0B1D3A;margin-bottom:20px;">Eğitim Kadrosu</h3>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px 32px;">
         <div style="font-size:14px;color:#334155;padding:6px 0;">Prof. Dr. Alp Üstündağ</div>
@@ -1054,7 +1066,12 @@ faqContainer.innerHTML = faqs.map((f, i) => `
       <svg class="module-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
     </div>
     <div class="module-body">
-      <div style="padding:0 24px 20px 76px;font-size:14px;color:#475569;line-height:1.7;">${f.a}</div>
+      <div class="module-body-inner">
+        <div class="module-item">
+          <div class="module-item-dot"></div>
+          <div><span class="module-item-desc">${f.a}</span></div>
+        </div>
+      </div>
     </div>
   </div>
 `).join('');

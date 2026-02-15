@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T9CGZQGW4X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-T9CGZQGW4X');
+    </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ITU — Data Science & Business Analytics Certificate Programs</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #0B1D3A;
+  --navy-light: #132B52;
+  --blue: #2563EB;
+  --blue-soft: #3B82F6;
+  --gold: #D4A843;
+  --gold-light: #E8C76A;
+  --cream: #FAFAF7;
+  --white: #FFFFFF;
+  --gray-50: #F8FAFC;
+  --gray-100: #F1F5F9;
+  --gray-200: #E2E8F0;
+  --gray-300: #CBD5E1;
+  --gray-400: #94A3B8;
+  --gray-500: #64748B;
+  --gray-600: #475569;
+  --gray-700: #334155;
+  --gray-800: #1E293B;
+  --gray-900: #0F172A;
+  --radius: 16px;
+  --radius-sm: 10px;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+  --shadow-md: 0 4px 20px rgba(0,0,0,0.08);
+  --shadow-lg: 0 10px 40px rgba(0,0,0,0.12);
+  --shadow-glow: 0 0 60px rgba(37,99,235,0.15);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--cream);
+  color: var(--gray-800);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 50%, #1a3a6b 100%);
+  position: relative;
+  overflow: hidden;
+  padding: 80px 40px 60px;
+  text-align: center;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 30% 50%, rgba(37,99,235,0.12) 0%, transparent 50%),
+              radial-gradient(circle at 70% 30%, rgba(212,168,67,0.08) 0%, transparent 40%);
+  animation: heroShift 20s ease-in-out infinite;
+}
+
+@keyframes heroShift {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-3%, 2%); }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-badge {
+  display: inline-block;
+  padding: 6px 20px;
+  border: 1px solid rgba(212,168,67,0.4);
+  border-radius: 100px;
+  color: var(--gold-light);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+  backdrop-filter: blur(10px);
+  background: rgba(212,168,67,0.06);
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(32px, 5vw, 56px);
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  background: linear-gradient(135deg, var(--gold), var(--gold-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero p {
+  font-size: 17px;
+  color: rgba(255,255,255,0.65);
+  max-width: 560px;
+  margin: 0 auto;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+/* Stats bar */
+.stats-bar {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  margin-top: 48px;
+  padding-top: 36px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-number {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+.stat-label {
+  font-size: 12px;
+  color: rgba(255,255,255,0.45);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-top: 4px;
+}
+
+/* Main content */
+.main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  top: -30px;
+}
+
+/* Tabs */
+.tabs-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.tab-btn {
+  padding: 16px 36px;
+  border: none;
+  border-radius: var(--radius);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+  background: var(--white);
+  color: var(--gray-500);
+  box-shadow: var(--shadow-sm);
+}
+
+.tab-btn:hover {
+  color: var(--gray-700);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.tab-btn.active {
+  background: var(--navy);
+  color: var(--white);
+  box-shadow: var(--shadow-lg), var(--shadow-glow);
+  transform: translateY(-2px);
+}
+
+.tab-btn .tab-hours {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 10px;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 500;
+  background: rgba(0,0,0,0.06);
+  color: var(--gray-400);
+  transition: all 0.4s;
+}
+
+.tab-btn.active .tab-hours {
+  background: rgba(212,168,67,0.25);
+  color: var(--gold-light);
+}
+
+/* Tab content */
+.tab-content {
+  display: none;
+  animation: fadeSlideIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tab-content.active {
+  display: block;
+}
+
+@keyframes fadeSlideIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Program intro card */
+.program-intro {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 40px 44px;
+  margin-bottom: 28px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--gray-200);
+  position: relative;
+  overflow: hidden;
+}
+
+.program-intro::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--blue), var(--gold));
+}
+
+.program-intro h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 16px;
+}
+
+.program-intro p {
+  font-size: 16px;
+  color: var(--gray-600);
+  line-height: 1.8;
+  max-width: 720px;
+}
+
+.program-meta {
+  display: flex;
+  gap: 24px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.meta-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: var(--gray-50);
+  border: 1px solid var(--gray-200);
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--gray-600);
+}
+
+.meta-chip svg {
+  width: 16px;
+  height: 16px;
+  color: var(--blue-soft);
+}
+
+/* Modules grid */
+.modules-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.module-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  border: 1px solid var(--gray-200);
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: var(--shadow-sm);
+}
+
+.module-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--gray-300);
+  transform: translateY(-2px);
+}
+
+.module-header {
+  padding: 20px 28px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  user-select: none;
+}
+
+.module-number {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--navy), var(--navy-light));
+  color: var(--gold);
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.module-info {
+  flex: 1;
+}
+
+.module-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--gray-800);
+  line-height: 1.3;
+}
+
+.module-subtitle {
+  font-size: 13px;
+  color: var(--gray-400);
+  margin-top: 2px;
+}
+
+.module-hours {
+  padding: 4px 14px;
+  background: var(--gray-50);
+  border: 1px solid var(--gray-200);
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gray-500);
+  flex-shrink: 0;
+}
+
+.module-chevron {
+  width: 20px;
+  height: 20px;
+  color: var(--gray-400);
+  transition: transform 0.3s;
+  flex-shrink: 0;
+}
+
+.module-card.open .module-chevron {
+  transform: rotate(180deg);
+}
+
+.module-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.module-card.open .module-body {
+  max-height: 600px;
+}
+
+.module-body-inner {
+  padding: 0 28px 24px;
+  padding-left: 86px;
+}
+
+.module-item {
+  display: flex;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--gray-100);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.module-item:last-child {
+  border-bottom: none;
+}
+
+.module-item-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gold);
+  flex-shrink: 0;
+  margin-top: 8px;
+}
+
+.module-item-label {
+  font-weight: 600;
+  color: var(--gray-700);
+}
+
+.module-item-desc {
+  color: var(--gray-500);
+}
+
+.module-card.capstone {
+  border: 2px solid var(--gold);
+  background: linear-gradient(135deg, var(--white) 0%, #FFFDF5 100%);
+}
+
+.module-card.capstone .module-number {
+  background: linear-gradient(135deg, var(--gold), var(--gold-light));
+  color: var(--navy);
+}
+
+.capstone-badge {
+  display: inline-block;
+  padding: 2px 10px;
+  background: rgba(212,168,67,0.12);
+  color: var(--gold);
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-left: 8px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 48px 24px;
+  margin-top: 48px;
+  color: var(--gray-400);
+  font-size: 13px;
+}
+
+.footer a {
+  color: var(--blue-soft);
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+/* Comparison grid */
+.compare-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.compare-header-row {
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr;
+  gap: 0;
+  padding: 0 0 12px;
+  border-bottom: 2px solid var(--navy);
+  margin-bottom: 4px;
+}
+
+.compare-header-row .compare-col {
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--navy);
+  padding: 8px 24px;
+  font-family: 'Playfair Display', serif;
+}
+
+.compare-header-row .compare-label-col {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--gray-400);
+  font-weight: 600;
+}
+
+.compare-row {
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr;
+  gap: 0;
+  background: var(--white);
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  border: 1px solid var(--gray-100);
+  transition: all 0.25s;
+  overflow: hidden;
+}
+
+.compare-row:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+  border-color: var(--gray-200);
+}
+
+.compare-col {
+  padding: 16px 24px;
+  font-size: 14px;
+  color: var(--gray-600);
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+}
+
+.compare-label-col {
+  font-weight: 600 !important;
+  color: var(--navy) !important;
+  font-size: 13px !important;
+  background: var(--gray-50);
+  border-right: 3px solid var(--gold);
+}
+
+.compare-row .compare-col:nth-child(2) {
+  border-right: 1px solid var(--gray-100);
+}
+
+.compare-yes {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: #ECFDF5;
+  color: #059669;
+  font-weight: 700;
+  font-size: 15px;
+  box-shadow: 0 1px 3px rgba(5,150,105,0.12);
+}
+
+.compare-no {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: var(--gray-50);
+  border: 1px solid var(--gray-200);
+  color: var(--gray-300);
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .compare-header-row,
+  .compare-row {
+    grid-template-columns: 140px 1fr 1fr;
+  }
+  .compare-col { padding: 12px 14px; font-size: 12px; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero { padding: 60px 24px 48px; }
+  .stats-bar { gap: 24px; flex-wrap: wrap; }
+  .tabs-wrapper { flex-direction: column; padding: 0 8px; }
+  .tab-btn { width: 100%; text-align: center; }
+  .program-intro { padding: 28px 24px; }
+  .module-header { padding: 16px 20px; gap: 12px; }
+  .module-body-inner { padding-left: 20px; }
+  .program-meta { gap: 12px; }
+}
+</style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero">
+  <div style="position:absolute;top:20px;right:28px;z-index:10;display:flex;gap:4px;background:rgba(255,255,255,0.08);border-radius:100px;padding:3px;backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,0.12);">
+    <a href="index.html" style="padding:6px 16px;border-radius:100px;font-size:13px;font-weight:600;font-family:'DM Sans',sans-serif;color:rgba(255,255,255,0.5);text-decoration:none;transition:all 0.3s;cursor:pointer;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">TR</a>
+    <span style="padding:6px 16px;border-radius:100px;font-size:13px;font-weight:600;font-family:'DM Sans',sans-serif;background:rgba(255,255,255,0.15);color:#fff;cursor:default;">EN</span>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge">Istanbul Technical University</div>
+    <h1>Data Science & Business Analytics<br><span>Certificate Programs</span></h1>
+    <p>Hands-on certificate programs designed by ITU faculty, spanning from data analytics to Agentic AI.</p>
+    <div class="stats-bar">
+      <div class="stat">
+        <div class="stat-number">2</div>
+        <div class="stat-label">Programs</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">174</div>
+        <div class="stat-label">Total Hours</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">26</div>
+        <div class="stat-label">Modules</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">2026</div>
+        <div class="stat-label">Term</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Main Content -->
+<div class="main">
+
+  <!-- Tabs -->
+  <div class="tabs-wrapper">
+    <button class="tab-btn active" onclick="switchTab('ba')">
+      Big Data & Business Analytics <span class="tab-hours">84 hrs</span>
+    </button>
+    <button class="tab-btn" onclick="switchTab('ds')">
+      Data Science <span class="tab-hours">90 hrs</span>
+    </button>
+    <button class="tab-btn" onclick="switchTab('compare')">
+      Program Comparison <span class="tab-hours">⇄</span>
+    </button>
+    <button class="tab-btn" onclick="switchTab('faq')">
+      FAQ <span class="tab-hours">?</span>
+    </button>
+  </div>
+
+  <!-- Tab 1: Business Analytics -->
+  <div id="tab-ba" class="tab-content active">
+    <div class="program-intro">
+      <h2>Big Data & Business Analytics</h2>
+      <p>A comprehensive program that develops data-driven decision-making competency across a wide spectrum from supply chain to finance, customer analytics to Agentic AI. Participants learn both classical analytics methods and cutting-edge AI technologies such as LLM, LangGraph, and multi-agent systems, designing systems that can autonomously solve business problems.</p>
+      <div class="program-meta">
+        <span class="meta-chip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          84 Hours
+        </span>
+        <span class="meta-chip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          12 Moduls
+        </span>
+        <span class="meta-chip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          R + Python
+        </span>
+        <span class="meta-chip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          Capstone Project
+        </span>
+      </div>
+      <div style="margin-top:24px;">
+        <a href="https://itusem.itu.edu.tr/egitimler-ve-programlar/isletme-fakultesi-sertifika-programlari/buyuk-veri-ve-is-analatigi-uzmanligi-sertifika-programi" target="_blank" style="display:inline-flex;align-items:center;gap:8px;padding:12px 28px;background:#0B1D3A;color:#fff;border-radius:10px;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:600;text-decoration:none;transition:all 0.3s;box-shadow:0 2px 8px rgba(11,29,58,0.2);">Details & Registration <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg></a>
+      </div>
+    </div>
+
+    <div class="modules-grid" id="modules-ba"></div>
+
+    <div style="margin-top:28px;background:#fff;border-radius:16px;border:1px solid #E2E8F0;box-shadow:0 1px 3px rgba(0,0,0,0.06);padding:32px 36px;">
+      <div style="margin-bottom:24px;padding-bottom:20px;border-bottom:2px solid #D4A843;">
+        <h3 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:#0B1D3A;margin-bottom:12px;">Program Coordinator</h3>
+        <div style="font-size:15px;color:#0B1D3A;font-weight:600;padding:6px 0;">Prof. Dr. Alp Üstündağ</div>
+      </div>
+      <h3 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:#0B1D3A;margin-bottom:20px;">Faculty</h3>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px 32px;">
+        <div style="font-size:14px;color:#334155;padding:6px 0;">Prof. Dr. Mehmet Güray Güler</div>
+        <div style="font-size:14px;color:#334155;padding:6px 0;">Prof. Dr. Selim Zaim</div>
+        <div style="font-size:14px;color:#334155;padding:6px 0;">Prof. Dr. Alp Üstündağ</div>
+        <div style="font-size:14px;color:#334155;padding:6px 0;">Prof. Dr. Bülent Güloğlu</div>
+        <div style="font-size:14px;color:#334155;padding:6px 0;">Prof. Dr. Başar Öztayşi</div>
+        <div style="font-size:14px;color:#334155;padding:6px 0;">Prof. Dr. Behçet Uğur Töreyin</div>
+        <div style="font-size:14px;color:#334155;padding:6px 0;">Doç. Dr. Ömer Faruk Beyca</div>
+        <div style="font-size:14px;color:#334155;padding:6px 0;">Doç. Dr. Sefer Baday</div>
+        <div style="font-size:14px;color:#334155;padding:6px 0;">Dr. Öğretim Üyesi Mehmet Yasin Ulukuş</div>
+        <div style="font-size:14px;color:#334155;padding:6px 0;">Dr. Öğretim Üyesi Süha Tuna</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab 2: Data Science -->
+  <div id="tab-ds" class="tab-content">
+    <div class="program-intro">
+      <h2>Data Science</h2>
+      <p>An advanced program providing deep technical competency in the Python ecosystem, spanning from scientific computing to deep learning, NLP to Agentic AI. Participants gain the skills to independently execute end-to-end data science projects, developing multi-agent systems with LangGraph and deploying interactive applications on Streamlit.</p>
+      <div class="program-meta">
+        <span class="meta-chip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          90 Hours
+        </span>
+        <span class="meta-chip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          14 Moduls
+        </span>
+        <span class="meta-chip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          Python
+        </span>
+        <span class="meta-chip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          Capstone Project
+        </span>
+      </div>
+      <div style="margin-top:24px;">
+        <a href="https://itusem.itu.edu.tr/egitimler-ve-programlar/isletme-fakultesi-sertifika-programlari/data-science--uzmanligi-sertifika-programi" target="_blank" style="display:inline-flex;align-items:center;gap:8px;padding:12px 28px;background:#0B1D3A;color:#fff;border-radius:10px;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:600;text-decoration:none;transition:all 0.3s;box-shadow:0 2px 8px rgba(11,29,58,0.2);">Details & Registration <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg></a>
+      </div>
+    </div>
+
+    <div class="modules-grid" id="modules-ds"></div>
+
+    <div style="margin-top:28px;background:#fff;border-radius:16px;border:1px solid #E2E8F0;box-shadow:0 1px 3px rgba(0,0,0,0.06);padding:32px 36px;">
+      <div style="margin-bottom:24px;padding-bottom:20px;border-bottom:2px solid #D4A843;">
+        <h3 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:#0B1D3A;margin-bottom:12px;">Program Coordinator</h3>
+        <div style="font-size:15px;color:#0B1D3A;font-weight:600;padding:6px 0;">Prof. Dr. Alp Üstündağ</div>
+      </div>
+      <h3 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:#0B1D3A;margin-bottom:20px;">Faculty</h3>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px 32px;">
+        <div style="font-size:14px;color:#334155;padding:6px 0;">Prof. Dr. Alp Üstündağ</div>
+        <div style="font-size:14px;color:#334155;padding:6px 0;">Prof. Dr. Başar Öztayşi</div>
+        <div style="font-size:14px;color:#334155;padding:6px 0;">Doç. Dr. Ömer Faruk Beyca</div>
+        <div style="font-size:14px;color:#334155;padding:6px 0;">Doç. Dr. Sefer Baday</div>
+        <div style="font-size:14px;color:#334155;padding:6px 0;">Dr. Öğretim Üyesi Mehmet Yasin Ulukuş</div>
+        <div style="font-size:14px;color:#334155;padding:6px 0;">Dr. Öğretim Üyesi Mehmet Ali Ergün</div>
+        <div style="font-size:14px;color:#334155;padding:6px 0;">Dr. Öğretim Üyesi Süha Tuna</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab 3: Comparison -->
+  <div id="tab-compare" class="tab-content">
+    <div class="program-intro">
+      <h2>Program Comparison</h2>
+      <p>Compare the key features of both programs side by side to determine which one suits you best.</p>
+    </div>
+
+    <table style="width:100%;border-collapse:collapse;background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.08);border:1px solid #E2E8F0;font-size:14px;font-family:'DM Sans',sans-serif;">
+      <thead>
+        <tr style="background:#0B1D3A;">
+          <th style="padding:16px 24px;text-align:left;color:#94A3B8;font-size:11px;text-transform:uppercase;letter-spacing:2px;font-weight:600;width:200px;border-bottom:none;">Feature</th>
+          <th style="padding:16px 24px;text-align:left;color:#fff;font-size:15px;font-weight:700;font-family:'Playfair Display',serif;border-bottom:none;">Big Data & Business Analytics</th>
+          <th style="padding:16px 24px;text-align:left;color:#fff;font-size:15px;font-weight:700;font-family:'Playfair Display',serif;border-left:1px solid rgba(255,255,255,0.15);border-bottom:none;">Data Science</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="background:#F8FAFC;"><td style="padding:14px 24px;font-weight:600;color:#0B1D3A;border-right:1px solid #D4A843;border-bottom:1px solid #F1F5F9;">Duration</td><td style="padding:14px 24px;color:#475569;border-bottom:1px solid #F1F5F9;">84 hours</td><td style="padding:14px 24px;color:#475569;border-bottom:1px solid #F1F5F9;border-left:1px solid #F1F5F9;">90 hours</td></tr>
+        <tr><td style="padding:14px 24px;font-weight:600;color:#0B1D3A;border-right:1px solid #D4A843;border-bottom:1px solid #F1F5F9;">Module Count</td><td style="padding:14px 24px;color:#475569;border-bottom:1px solid #F1F5F9;">12</td><td style="padding:14px 24px;color:#475569;border-bottom:1px solid #F1F5F9;border-left:1px solid #F1F5F9;">14</td></tr>
+        <tr style="background:#F8FAFC;"><td style="padding:14px 24px;font-weight:600;color:#0B1D3A;border-right:1px solid #D4A843;border-bottom:1px solid #F1F5F9;">Target Audience</td><td style="padding:14px 24px;color:#475569;border-bottom:1px solid #F1F5F9;">Business professionals, managers, analysts</td><td style="padding:14px 24px;color:#475569;border-bottom:1px solid #F1F5F9;border-left:1px solid #F1F5F9;">Data scientist candidates, engineers, technical professionals</td></tr>
+        <tr><td style="padding:14px 24px;font-weight:600;color:#0B1D3A;border-right:1px solid #D4A843;border-bottom:1px solid #F1F5F9;">Focus</td><td style="padding:14px 24px;color:#475569;border-bottom:1px solid #F1F5F9;">Business problems + analytics tools</td><td style="padding:14px 24px;color:#475569;border-bottom:1px solid #F1F5F9;border-left:1px solid #F1F5F9;">Technical depth + model development</td></tr>
+        <tr style="background:#F8FAFC;"><td style="padding:14px 24px;font-weight:600;color:#0B1D3A;border-right:1px solid #D4A843;border-bottom:1px solid #F1F5F9;">Approach</td><td style="padding:14px 24px;color:#475569;border-bottom:1px solid #F1F5F9;">What, why, and where to apply</td><td style="padding:14px 24px;color:#475569;border-bottom:1px solid #F1F5F9;border-left:1px solid #F1F5F9;">How to build, how to optimize</td></tr>
+        <tr><td style="padding:14px 24px;font-weight:600;color:#0B1D3A;border-right:1px solid #D4A843;border-bottom:1px solid #F1F5F9;">Languages</td><td style="padding:14px 24px;color:#475569;border-bottom:1px solid #F1F5F9;">R + Python</td><td style="padding:14px 24px;color:#475569;border-bottom:1px solid #F1F5F9;border-left:1px solid #F1F5F9;">Python</td></tr>
+        <tr style="background:#F8FAFC;"><td style="padding:14px 24px;font-weight:600;color:#0B1D3A;border-right:1px solid #D4A843;border-bottom:1px solid #F1F5F9;">Machine Learning</td><td style="padding:14px 24px;color:#475569;border-bottom:1px solid #F1F5F9;">Introductory (6 hours)</td><td style="padding:14px 24px;color:#475569;border-bottom:1px solid #F1F5F9;border-left:1px solid #F1F5F9;">Advanced — 2 modules (12 hours)</td></tr>
+        <tr><td style="padding:14px 24px;font-weight:600;color:#0B1D3A;border-right:1px solid #D4A843;border-bottom:1px solid #F1F5F9;">Deep Learning</td><td style="padding:14px 24px;color:#475569;border-bottom:1px solid #F1F5F9;">Conceptual intro (within ML module)</td><td style="padding:14px 24px;color:#475569;border-bottom:1px solid #F1F5F9;border-left:1px solid #F1F5F9;">Standalone module (6 hours)</td></tr>
+        <tr style="background:#F8FAFC;"><td style="padding:14px 24px;font-weight:600;color:#0B1D3A;border-right:1px solid #D4A843;border-bottom:1px solid #F1F5F9;">Reinforcement Learning</td><td style="padding:14px 24px;color:#CBD5E1;border-bottom:1px solid #F1F5F9;">—</td><td style="padding:14px 24px;color:#475569;border-bottom:1px solid #F1F5F9;border-left:1px solid #F1F5F9;">6 hours</td></tr>
+        <tr><td style="padding:14px 24px;font-weight:600;color:#0B1D3A;border-right:1px solid #D4A843;border-bottom:1px solid #F1F5F9;">NLP & Time Series</td><td style="padding:14px 24px;color:#CBD5E1;border-bottom:1px solid #F1F5F9;">—</td><td style="padding:14px 24px;color:#475569;border-bottom:1px solid #F1F5F9;border-left:1px solid #F1F5F9;">Standalone module (6 hours)</td></tr>
+        <tr style="background:#F8FAFC;"><td style="padding:14px 24px;font-weight:600;color:#0B1D3A;border-right:1px solid #D4A843;border-bottom:1px solid #F1F5F9;">MLOps</td><td style="padding:14px 24px;color:#475569;border-bottom:1px solid #F1F5F9;">Strategic overview (in intro module)</td><td style="padding:14px 24px;color:#475569;border-bottom:1px solid #F1F5F9;border-left:1px solid #F1F5F9;">Implementation level (MLflow, FastAPI)</td></tr>
+        <tr><td style="padding:14px 24px;font-weight:600;color:#0B1D3A;border-right:1px solid #D4A843;border-bottom:1px solid #F1F5F9;">Streamlit</td><td style="padding:14px 24px;color:#475569;border-bottom:1px solid #F1F5F9;">In capstone project</td><td style="padding:14px 24px;color:#475569;border-bottom:1px solid #F1F5F9;border-left:1px solid #F1F5F9;">Standalone module + capstone</td></tr>
+        <tr style="background:#F8FAFC;"><td style="padding:14px 24px;font-weight:600;color:#0B1D3A;border-right:1px solid #D4A843;border-bottom:1px solid #F1F5F9;">Domain Applications</td><td style="padding:14px 24px;color:#475569;border-bottom:1px solid #F1F5F9;">Finance, supply chain, customer, web/social media</td><td style="padding:14px 24px;color:#475569;border-bottom:1px solid #F1F5F9;border-left:1px solid #F1F5F9;">Domain-agnostic</td></tr>
+        <tr><td style="padding:14px 24px;font-weight:600;color:#0B1D3A;border-right:1px solid #D4A843;border-bottom:1px solid #F1F5F9;">Agentic AI / LangGraph</td><td style="padding:14px 24px;color:#059669;border-bottom:1px solid #F1F5F9;"><span style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:8px;background:#ECFDF5;color:#059669;font-weight:700;font-size:15px;">✓</span></td><td style="padding:14px 24px;color:#059669;border-bottom:1px solid #F1F5F9;border-left:1px solid #F1F5F9;"><span style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:8px;background:#ECFDF5;color:#059669;font-weight:700;font-size:15px;">✓</span></td></tr>
+        <tr style="background:#F8FAFC;"><td style="padding:14px 24px;font-weight:600;color:#0B1D3A;border-right:1px solid #D4A843;border-bottom:1px solid #F1F5F9;">LLM API Integration</td><td style="padding:14px 24px;border-bottom:1px solid #F1F5F9;"><span style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:8px;background:#ECFDF5;color:#059669;font-weight:700;font-size:15px;">✓</span></td><td style="padding:14px 24px;border-bottom:1px solid #F1F5F9;border-left:1px solid #F1F5F9;"><span style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:8px;background:#ECFDF5;color:#059669;font-weight:700;font-size:15px;">✓</span></td></tr>
+        <tr><td style="padding:14px 24px;font-weight:600;color:#0B1D3A;border-right:1px solid #D4A843;">Capstone Project</td><td style="padding:14px 24px;color:#475569;">Customer analytics focused (12 hours)</td><td style="padding:14px 24px;color:#475569;border-left:1px solid #F1F5F9;">Open topic (12 hours)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Tab 4: FAQ -->
+  <div id="tab-faq" class="tab-content">
+    <div class="program-intro">
+      <h2>Frequently Asked Questions</h2>
+      <p>Common questions and answers about our programs.</p>
+    </div>
+    <div id="faq-container" class="modules-grid"></div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <div style="margin-bottom:16px;">
+    <span style="font-weight:600;color:#334155;font-size:14px;">ITU Continuing Education Center</span>
+  </div>
+  <p>ITU Taskisla Building, No.133 Taksim Istanbul</p>
+  <p style="margin-top:6px;">E-posta: <a href="mailto:itusem@itu.edu.tr">itusem@itu.edu.tr</a> &nbsp;·&nbsp; Tel: (0212) 251 08 09</p>
+  <p style="margin-top:16px;opacity:0.6;">© 2025–2026 All rights reserved.</p>
+</div>
+
+<script>
+// Module data
+const modulesBA = [
+  { n:1, title:"Introduction to Business Analytics", hours:6, items:[
+    {l:"Analytics Spectrum", d:"Big data and business analytics; descriptive, predictive, prescriptive, and autonomous (Agentic AI) analytics approaches"},
+    {l:"Modeling Approaches", d:"Deterministic/stochastic, linear/nonlinear modeling; relationship between AI, machine learning, and deep learning"},
+    {l:"Analytical Methods", d:"Classification, clustering, association analysis, and optimization approaches"},
+    {l:"New Paradigms", d:"AI-driven decision support systems and RaaS (Results-as-a-Service) paradigm"},
+    {l:"AI Platforms", d:"Introduction to current no-code/low-code AI platforms (Dataiku, Vertex AI, Microsoft Fabric, AWS SageMaker)"},
+    {l:"Vertical Applications", d:"Supply chain analytics, customer analytics, finance and risk analytics"},
+    {l:"Governance", d:"Model lifecycle, strategic overview of MLOps and LLMOps processes"},
+  ]},
+  { n:2, title:"Applied Statistics", hours:6, items:[
+    {l:"Data Description", d:"Descriptive statistics and probability distributions"},
+    {l:"Inferential Statistics", d:"Parameter estimation and hypothesis testing"},
+    {l:"Comparative Analysis", d:"ANOVA"},
+    {l:"Practice", d:"Basic statistical modeling applications with R"},
+  ]},
+  { n:3, title:"Introduction to Data Science with R", hours:6, items:[
+    {l:"Programming Fundamentals", d:"R programming language, data types and structures"},
+    {l:"Exploratory Analysis", d:"Descriptive data analysis and EDA with R"},
+    {l:"Visualization", d:"Business-focused data visualization techniques with ggplot2"},
+    {l:"Modeling", d:"Modeling and algorithm analysis with R"},
+  ]},
+  { n:4, title:"Data Analytics with Python", hours:12, items:[
+    {l:"Core Python", d:"Python development environment, basic data structures and functions"},
+    {l:"Data Manipulation", d:"Scientific computing with Numpy, data analysis with Pandas"},
+    {l:"Visualization", d:"Data visualization with Matplotlib"},
+    {l:"Data Preparation", d:"Data preprocessing techniques in Python"},
+    {l:"Machine Learning", d:"Basic ML applications with Scikit-learn"},
+    {l:"LLM Integration", d:"OpenAI/Claude API integration and prompt engineering fundamentals"},
+    {l:"RAG Fundamentals", d:"Retrieval-Augmented Generation basic implementation"},
+    {l:"Agentic AI", d:"Agentic AI workflow design with LangGraph (state management, cyclic flows, tool calling)"},
+  ]},
+  { n:5, title:"Fundamentals of Data Mining", hours:6, items:[
+    {l:"Regression Methods", d:"Simple, multiple, and logistic regression analysis"},
+    {l:"Statistical Methods", d:"Factor analysis and discriminant analysis"},
+    {l:"Exploratory Methods", d:"Cluster analysis"},
+    {l:"Algorithmic Methods", d:"Decision trees and neural network fundamentals"},
+    {l:"Methodology", d:"End-to-end data mining projects with R"},
+  ]},
+  { n:6, title:"Artificial Intelligence & Machine Learning", hours:6, items:[
+    {l:"Core Concepts", d:"Evolution of AI and machine learning; modeling methodology and algorithm selection"},
+    {l:"Supervised Learning", d:"KNN, Decision Tree, Naïve Bayes, SVM, Neural Networks and R applications"},
+    {l:"Intro to Deep Learning", d:"Conceptual overview of CNN, RNN, and Transformer architectures"},
+    {l:"Modern AI Concepts", d:"Transfer learning, foundation models, and generative AI"},
+  ]},
+  { n:7, title:"Database Management & Big Data", hours:6, items:[
+    {l:"Relational Databases", d:"RDBMS fundamentals, SQL coding and sample applications"},
+    {l:"NoSQL World", d:"Key-Value, Wide Column, Document and Graph databases"},
+    {l:"AI Infrastructure", d:"Vector database concept (embedding and RAG infrastructure)"},
+    {l:"Modern Architecture", d:"Lakehouse approach — data warehouse and data lake unified"},
+    {l:"Practice", d:"Coding examples on popular NoSQL databases"},
+  ]},
+  { n:8, title:"Big Data Technologies & Applications", hours:6, items:[
+    {l:"Big Data Ecosystem", d:"Big data concepts, platform evolution and solution approaches"},
+    {l:"Classic Infrastructure", d:"Hadoop HDFS and MapReduce; Apache Spark and AWS platforms"},
+    {l:"Cloud & Service Models", d:"Hadoop-as-a-Service and Cloud-as-a-Service solutions"},
+    {l:"Modern Data Platforms", d:"Databricks, Snowflake and lakehouse applications"},
+    {l:"Real-Time Processing", d:"Streaming architecture and Kafka concepts"},
+    {l:"Modern Data Stack", d:"dbt and data transformation tools"},
+  ]},
+  { n:9, title:"Web & Social Media Analytics", hours:6, items:[
+    {l:"Web Analytics Fundamentals", d:"Web publishing, web/mobile data structures and analytics approaches"},
+    {l:"Modern Tracking", d:"GA4 setup, event tracking and reporting"},
+    {l:"Conversion", d:"Conversion optimization definition and reports"},
+    {l:"Social Media", d:"Social media data mining and sentiment analysis"},
+  ]},
+  { n:10, title:"Finance & Risk Analytics", hours:6, items:[
+    {l:"Time Series", d:"Stationarity analysis; forecasting with univariate and multivariate time series"},
+    {l:"Volatility Modeling", d:"Historical (GARCH), realized and implied volatility"},
+    {l:"Advanced Forecasting", d:"LSTM and XGBoost applications on financial data"},
+    {l:"Alternative Data", d:"Sentiment analysis with NLP and financial decision support"},
+    {l:"Risk Management", d:"Value at Risk (VaR) and portfolio optimization"},
+  ]},
+  { n:11, title:"Supply Chain Analytics", hours:6, items:[
+    {l:"Demand Management", d:"Demand forecasting methods"},
+    {l:"Inventory Optimization", d:"Inventory planning and optimization"},
+    {l:"Logistics", d:"Route planning and optimization"},
+    {l:"Network Design", d:"Supply chain network optimization and risk management"},
+  ]},
+  { n:12, title:"Customer Analytics & Agentic AI Applications", hours:12, capstone:true, items:[
+    {l:"Marketing Metrics", d:"Traditional and customer value-based metrics; CLV and churn analysis"},
+    {l:"Segmentation", d:"RFM analysis and data-driven customer segmentation"},
+    {l:"Campaign Management", d:"Association analysis, A/B testing and experimental design"},
+    {l:"Capstone Project", d:"Multi-agent system using LangGraph that analyzes customer data, performs segmentation, detects churn risk, and generates personalized campaign content"},
+    {l:"Prototyping", d:"Interface development and deployment of the capstone project with Streamlit"},
+  ]},
+];
+
+const modulesDS = [
+  { n:1, title:"Data Science Fundamentals", hours:6, items:[
+    {l:"What is Data Science", d:"Data concepts, data structuring and the big data process"},
+    {l:"Data Architecture", d:"Data warehouse, data lake and lakehouse approaches"},
+    {l:"Cloud & Infrastructure", d:"Cloud computing systems, storage methods and ETL package design"},
+    {l:"Modern Data Platforms", d:"Databricks, Snowflake, vector database concepts"},
+    {l:"AI Platforms", d:"Introduction to Dataiku, Vertex AI, Microsoft Fabric, AWS SageMaker"},
+    {l:"Data Visualization", d:"Reporting systems, self-service structures and cognitive services"},
+    {l:"Governance", d:"Introduction to model lifecycle, MLOps and LLMOps concepts"},
+  ]},
+  { n:2, title:"Scientific Computing & Data Structures", hours:6, items:[
+    {l:"Array Structures", d:"Multi-dimensional array creation, data types and indexing (Numpy)"},
+    {l:"Computations", d:"Mathematical, statistical and vectorial operations"},
+    {l:"Logical Operations", d:"Comparison, masking and Boolean logic"},
+    {l:"Linear Algebra", d:"Matrix operations and applications"},
+    {l:"Performance", d:"Vectorization and computation optimization"},
+  ]},
+  { n:3, title:"Data Analysis & Exploratory Data Analysis", hours:6, items:[
+    {l:"Data Structures", d:"Series and DataFrame concepts, data reading/writing (Pandas)"},
+    {l:"Data Access", d:"Indexing, selection, filtering and function application"},
+    {l:"Descriptive Statistics", d:"Basic statistical summaries and missing data management"},
+    {l:"Exploratory Analysis", d:"Data distributions, correlations and pattern detection"},
+    {l:"Case Study", d:"EDA applications on real datasets"},
+  ]},
+  { n:4, title:"Data Transformation & Integration", hours:6, items:[
+    {l:"Data Merging", d:"Merge, join and concatenation techniques (Pandas)"},
+    {l:"Grouping & Summarization", d:"Aggregation, GroupBy and pivot tables"},
+    {l:"Time Series", d:"Time series data structures, timezone management and resampling"},
+    {l:"Data Reshaping", d:"Pivot, melt, stack/unstack and hierarchical indexing"},
+    {l:"Data Quality", d:"Data cleaning, transformation and enrichment processes"},
+  ]},
+  { n:5, title:"Big Data Technologies & Applications", hours:6, items:[
+    {l:"Big Data Ecosystem", d:"Big data concepts, platform evolution and solution approaches"},
+    {l:"Classic Infrastructure", d:"Hadoop HDFS and MapReduce; Apache Spark and AWS platforms"},
+    {l:"Cloud & Service Models", d:"Hadoop-as-a-Service and Cloud-as-a-Service solutions"},
+    {l:"Modern Data Platforms", d:"Databricks, Snowflake and lakehouse applications"},
+    {l:"Real-Time Processing", d:"Streaming architecture and Kafka concepts"},
+  ]},
+  { n:6, title:"Database Management & Big Data", hours:6, items:[
+    {l:"Relational Databases", d:"RDBMS fundamentals, SQL coding and sample applications"},
+    {l:"NoSQL World", d:"Key-Value, Wide Column, Document and Graph databases"},
+    {l:"AI Infrastructure", d:"Vector database concept (embedding and RAG infrastructure)"},
+    {l:"Modern Architecture", d:"Lakehouse approach — data warehouse and data lake unified"},
+    {l:"Practice", d:"Coding examples on popular NoSQL databases"},
+  ]},
+  { n:7, title:"Data Visualization & Application Development", hours:6, items:[
+    {l:"Basic Visualization", d:"Chart fundamentals — line, scatter, histogram, bar (Matplotlib)"},
+    {l:"Interactive Visualization", d:"Interactive figure creation (Plotly)"},
+    {l:"Dashboard", d:"Data dashboard development (Streamlit)"},
+    {l:"Application Design", d:"Application components and layout management"},
+    {l:"Deployment", d:"Application deployment"},
+  ]},
+  { n:8, title:"Machine Learning I", hours:6, items:[
+    {l:"Core Concepts", d:"Machine learning approach and model types"},
+    {l:"Data Preparation", d:"Scaling, encoding, missing data management and data transformation"},
+    {l:"Supervised Learning", d:"Linear regression, logistic regression, KNN, Naive Bayes, SVM and decision trees (Scikit-learn)"},
+    {l:"Unsupervised Learning", d:"K-Means, DBSCAN clustering; dimensionality reduction with PCA"},
+    {l:"Pipeline", d:"ML pipeline structure and data preprocessing integration"},
+  ]},
+  { n:9, title:"Machine Learning II", hours:6, items:[
+    {l:"Feature Engineering", d:"Feature importance, feature selection methods (correlation, ANOVA, Chi-Square, forward/backward selection)"},
+    {l:"Model Evaluation", d:"Cross-validation, confusion matrix, ROC-AUC and metric selection"},
+    {l:"Hyperparameter Optimization", d:"Grid search, random search and overfitting management"},
+    {l:"Ensemble Methods", d:"Random Forest, Gradient Boosting and XGBoost"},
+    {l:"MLOps Fundamentals", d:"Model versioning (MLflow), model serving via API (FastAPI), model monitoring concepts"},
+  ]},
+  { n:10, title:"Deep Learning", hours:6, items:[
+    {l:"Neural Networks", d:"Basic ANN architecture, activation functions and backpropagation"},
+    {l:"CNN", d:"Convolutional neural networks and image processing applications"},
+    {l:"RNN", d:"Recurrent neural networks and sequence modeling"},
+    {l:"Transformer", d:"Transformer architecture and attention mechanism"},
+    {l:"Modern AI Concepts", d:"Transfer learning, fine-tuning and foundation models"},
+  ]},
+  { n:11, title:"Reinforcement Learning", hours:6, items:[
+    {l:"Core Concepts", d:"State, action, reward and policy concepts"},
+    {l:"Theoretical Foundation", d:"Markov decision processes, value functions and Bellman equations"},
+    {l:"Classic Algorithms", d:"Epsilon-Greedy and Q-Learning algorithms"},
+    {l:"Deep RL", d:"DQN techniques"},
+  ]},
+  { n:12, title:"NLP & Time Series Analysis", hours:6, items:[
+    {l:"Text Preprocessing", d:"Tokenization, stemming, lemmatization and stop word management"},
+    {l:"Text Representation", d:"TF-IDF, word embeddings (Word2Vec, GloVe) and sentence embeddings"},
+    {l:"NLP Applications", d:"Sentiment analysis and text classification"},
+    {l:"Time Series Forecasting", d:"ARIMA models and forecasting with Prophet"},
+    {l:"DL-based Forecasting", d:"LSTM and Transformer-based time series forecasting"},
+  ]},
+  { n:13, title:"Agentic AI & LLM Applications", hours:6, items:[
+    {l:"LLM Concepts", d:"Working principles of large language models and prompt engineering strategies"},
+    {l:"RAG Architecture", d:"Retrieval-Augmented Generation, embedding models and vector database usage"},
+    {l:"Agent Design", d:"Agentic AI workflow design — state management, cyclic flows, tool calling (LangGraph)"},
+    {l:"Multi-Agent Systems", d:"Multi-agent architecture design principles and orchestration"},
+  ]},
+  { n:14, title:"Project Implementation Workshop", hours:12, capstone:true, items:[
+    {l:"Problem Definition", d:"Identifying the business problem on the dataset"},
+    {l:"Data Preparation", d:"Data extraction, quality control, outlier and normality tests"},
+    {l:"Modeling", d:"Appropriate algorithm selection, model training and evaluation"},
+    {l:"LLM API Integration", d:"OpenAI/Claude API connection and LLM usage within the project"},
+    {l:"Agentic AI Integration", d:"Developing a multi-agent system supporting the modeling process with LangGraph"},
+    {l:"Prototyping", d:"Interface development and deployment of the project with Streamlit"},
+  ]},
+];
+
+// Render modules
+function renderModules(data, containerId) {
+  const container = document.getElementById(containerId);
+  container.innerHTML = data.map(m => `
+    <div class="module-card${m.capstone ? ' capstone' : ''}" onclick="toggleModule(this)">
+      <div class="module-header">
+        <div class="module-number">${m.n}</div>
+        <div class="module-info">
+          <div class="module-title">${m.title}${m.capstone ? '<span class="capstone-badge">Capstone</span>' : ''}</div>
+        </div>
+        <div class="module-hours">${m.hours} hrs</div>
+        <svg class="module-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+      <div class="module-body">
+        <div class="module-body-inner">
+          ${m.items.map(i => `
+            <div class="module-item">
+              <div class="module-item-dot"></div>
+              <div><span class="module-item-label">${i.l}:</span> <span class="module-item-desc">${i.d}</span></div>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+function toggleModule(el) {
+  el.classList.toggle('open');
+}
+
+function switchTab(tab) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+  
+  if (tab === 'ba') {
+    document.querySelectorAll('.tab-btn')[0].classList.add('active');
+    document.getElementById('tab-ba').classList.add('active');
+  } else if (tab === 'ds') {
+    document.querySelectorAll('.tab-btn')[1].classList.add('active');
+    document.getElementById('tab-ds').classList.add('active');
+  } else if (tab === 'compare') {
+    document.querySelectorAll('.tab-btn')[2].classList.add('active');
+    document.getElementById('tab-compare').classList.add('active');
+  } else {
+    document.querySelectorAll('.tab-btn')[3].classList.add('active');
+    document.getElementById('tab-faq').classList.add('active');
+  }
+}
+
+// Init
+renderModules(modulesBA, 'modules-ba');
+renderModules(modulesDS, 'modules-ds');
+
+// FAQ
+const faqs = [
+  {q:"Who can apply to the programs?", a:"Professionals interested in business analytics and data science, those seeking to advance their knowledge, or individuals considering a career change in this field can participate. Priority is given to graduates from Engineering, Mathematics, Statistics, Informatics, and Business Administration."},
+  {q:"What if I don't meet the graduation requirements?", a:"Candidates who do not meet the graduation requirements can apply by sending a request email for program admission."},
+  {q:"What is the main difference between the two programs?", a:"The Big Data & Business Analytics program focuses on producing analytical solutions for business problems and uses both R and Python. The Data Science program provides technical depth — advanced competency in machine learning, deep learning, and NLP — using Python only."},
+  {q:"Can I enroll in both programs?", a:"Yes, the programs are complementary in nature. However, please note that there are overlapping modules (Database Management, Big Data Technologies, Agentic AI)."},
+  {q:"How are classes conducted?", a:"Classes are held on weekends via live online (synchronous) sessions. The program is computer-assisted, and participants are required to bring their personal laptops."},
+  {q:"Is attendance mandatory?", a:"Yes, a 70% attendance requirement is in place."},
+  {q:"Are there exams?", a:"No, there are no exams. Evaluation is based on the capstone project."},
+  {q:"What certificate will I receive?", a:"Participants who take on project responsibility and successfully complete it earn an Istanbul Technical University approved <strong>Specialization Certificate</strong>. Those who do not take on project responsibility receive a <strong>Participation Certificate</strong>."},
+  {q:"I don't know programming, can I participate?", a:"Yes. Both programs teach programming fundamentals from scratch. The Business Analytics program includes introductory modules for R and Python, while the Data Science program covers Python."},
+  {q:"What software and tools will be used?", a:"Current tools such as Python, R, Jupyter Notebook, Pandas, Scikit-learn, Streamlit, LangGraph, OpenAI/Claude/Gemini API are used. All tools are free or have free versions available."},
+  {q:"Do I need to pay for LLM API usage?", a:"API usage may involve small costs. Affordable models (gpt-4o-mini, claude-haiku, gemini-flash) are preferred in classes. The estimated cost during the project is around 5-10 USD."},
+  {q:"What is the capstone project?", a:"In the final module, participants develop an end-to-end project on a real dataset. The project includes a multi-agent system with LangGraph, LLM API integration, and a Streamlit interface."},
+];
+
+const faqContainer = document.getElementById('faq-container');
+faqContainer.innerHTML = faqs.map((f, i) => `
+  <div class="module-card" onclick="toggleModule(this)" style="cursor:pointer;">
+    <div class="module-header" style="padding:18px 24px;">
+      <div class="module-number" style="width:36px;height:36px;font-size:14px;border-radius:10px;">${i+1}</div>
+      <div class="module-info" style="flex:1;">
+        <div class="module-title" style="font-size:15px;">${f.q}</div>
+      </div>
+      <svg class="module-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+    <div class="module-body">
+      <div class="module-body-inner">
+        <div class="module-item">
+          <div class="module-item-dot"></div>
+          <div><span class="module-item-desc">${f.a}</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+`).join('');
+</script>
+</body>
+</html>
